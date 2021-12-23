@@ -23,3 +23,4 @@ Kita bisa melakukan secara sekali perintah saja dan menggunakan paramerter --rm 
 Pastikan ketika ingin membackup sebuah volume container kita perlu stop dulu untuk containernya supaya tidak ada update atau write ke mongodbnya 
 docker container stop mongovolume
 docker container run --rm --name ubuntu --mount "type=bind,source=/Users/bsi/Documents/BSI/UpgradeSkill/Docker/belajar-docker-dasar/backup,destination=/backup" --mount "type=volume,source=mongodata,destination=/data" ubuntu:latest tar cvf /backup/backup.tar.gz /data 
+
