@@ -45,4 +45,7 @@ Kemudian untuk FROM golang:latest artinya kita perlue image murni golannya, kare
 
 Sedangkan COPY artinya salin file main.go ke dalam /app/
 
+docker container create --name go-hello -p 8080:8080 docker-hello-world:1.0
+docker container start go-hello
 Setelah itu tinggal buat container dari image diatas dengan publish port terlebih dahulu supaya dapat diakses dari host
+
